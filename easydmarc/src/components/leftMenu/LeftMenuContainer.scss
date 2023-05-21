@@ -1,0 +1,99 @@
+@import "./src/sass/settings";
+
+.left-menu-container {
+  width: 240px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  transition: width $default-transition-duration;
+  background: $white-skin-color;
+  @media screen and (max-width: 768px){
+    width: 52px;
+  }
+  @media screen and (max-width: 568px){
+    width: 0;
+    &.active {
+      width: 52px;
+    }
+  }
+}
+.left-menu-list {
+  padding: 12px 6px;
+  overflow-y: auto;
+  .left-menu-list-item {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    & + .left-menu-list-item {
+      margin-top: 4px;
+    }
+    &.active,
+    &:hover {
+      transition: all $default-transition-duration;
+      background: #f3f3fa;
+    }
+    &.active {
+      .menu-icon {
+        color: $menu-item-icon-active;
+      }
+      .menu-title {
+        font-weight: 600;
+      }
+      &::after {
+        content: '';
+        width: 2px;
+        height: 16px;
+        background: $secondary-btn;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+    &.menu-item-dropdown {
+      &::before {
+        content: '\e905';
+        font-family: 'icomoon', sans-serif;
+        font-size: 7px;
+        position: absolute;
+        right: 18px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+  }
+  .menu-icon {
+    font-size: 20px;
+    color: $menu-item-text-color;
+  }
+  .menu-title {
+    margin-inline-start: 15px;
+    font-family: $font-family-ROBOTO;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $menu-item-text-color;
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+}
+.easyDMARC-settings-info-message {
+  display: flex;
+  font-size: 13px;
+  font-family: $font-family-ROBOTO;
+  font-weight: 400;
+  line-height: 20px;
+  color: #999999;
+  padding: 0 12px;
+  margin: 20px 0 10px;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}

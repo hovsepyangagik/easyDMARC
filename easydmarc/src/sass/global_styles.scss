@@ -1,0 +1,45 @@
+@import "variables";
+@import "colors_scheme";
+
+body {
+  font-family: $font-family-INTER;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: $white-skin-color;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(110, 110, 110, 0.33);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: $font-family-ROBOTO;
+  a {
+    color: $white-skin-color;
+  }
+  &.btn-small {
+    height: 24px;
+    font-size: 12px;
+    padding: 0 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: $yellow-btn;
+  }
+  &.btn-medium {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 16px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: $default-btn;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

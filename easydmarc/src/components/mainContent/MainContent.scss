@@ -1,0 +1,313 @@
+@import "./src/sass/settings";
+
+.main-content {
+  display: flex;
+  background: $grey-skin-color;
+  flex: auto;
+  overflow: hidden;
+}
+.main-section {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  overflow-y: auto;
+  @media screen and (max-width: 568px){
+    padding: 16px;
+  }
+}
+.page-title-container {
+  display: flex;
+  align-items: center;
+  .main-page-icon {
+    font-size: 20px;
+    margin-inline-end: 15px;
+  }
+  .page-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #272727;
+  }
+}
+.select-domain-container {
+  padding: 16px;
+  background: $white-skin-color;
+  border-radius: 10px;
+  margin: 25px 0;
+  .select-domain {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    width: 240px;
+    border: 1px solid #CED4DA;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .domain-name {
+    flex: auto;
+  }
+  .icon-down-arrow {
+    font-size: 9px;
+  }
+}
+.special-offers {
+  flex: auto;
+  display: flex;
+  @media screen and (max-width: 992px){
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+.easySPF-trial {
+  width: 50%;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #F7F9FC;
+  border-radius: 20px 0 0 20px;
+  @media screen and (max-width: 1024px){
+    padding: 20px;
+  }
+  @media screen and (max-width: 992px){
+    width: 100%;
+  }
+}
+.upgrade-premium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  flex: auto;
+  padding: 40px;
+  background: #F7F9FC;
+  @media screen and (max-width: 992px){
+    background: none;
+  }
+  @media screen and (max-width: 992px){
+    padding: 40px 0;
+    width: 70%;
+  }
+  .special-offers-title {
+    font-weight: 600;
+    color: #484964;
+  }
+}
+.special-offers-title {
+  font-family: $font-family-ROBOTO;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  max-width: 400px;
+  span {
+    color: $secondary-btn;
+  }
+}
+.special-offers-description {
+  font-family: $font-family-ROBOTO;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  margin: 16px 0 24px;
+}
+.special-offers-secondary-title {
+  font-family: $font-family-ROBOTO;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+.getSPF {
+  display: flex;
+  justify-content: center;
+  font-family: $font-family-ROBOTO;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #00A9E0;
+}
+.lookups {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin: 30px 0;
+  @media screen and (max-width: 1125px){
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .without,
+  .with {
+    padding: 24px;
+    background: #F7F9FC;;
+    box-shadow: 0 10px 20px rgba(136, 166, 211, 0.1);
+  }
+  .lookups-title {
+    font-family: $font-family-ROBOTO;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .lookups-counts {
+    font-family: $font-family-ROBOTO;
+    font-size: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .without {
+    .lookups-counts {
+      color: #E63200;
+    }
+  }
+  .with {
+    .lookups-counts {
+      color: $default-btn;
+    }
+  }
+}
+.premium-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: linear-gradient(124.48deg, #FFFFFF -12.97%, rgba(255, 255, 255, 0.8) 108.75%);
+  box-shadow: 0 10px 20px rgba(136, 166, 211, 0.1);
+  border-radius: 20px;
+  .icon-premium {
+    margin-inline-end: 10px;
+    color: $yellow-btn;
+  }
+  .premium-plans-title {
+    font-family: $font-family-ROBOTO;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+  }
+}
+.benefits-title {
+  font-family: $font-family-ROBOTO;
+  font-size: 22px;
+  font-weight: 600;
+  color: #484964;
+  margin: 16px 0;
+}
+.benefits-list {
+  .benefit-item {
+    & + .benefit-item {
+      margin-top: 5px;
+    }
+  }
+  .icon-checkbox-circle {
+    font-size: 14px;
+    color: $default-btn;
+  }
+  .benefit-title {
+    font-family: $font-family-ROBOTO;
+    font-size: 14px;
+    font-weight: 400;
+    margin-inline-start: 10px;
+  }
+}
+.switcher-container {
+  margin: 20px 0;
+  padding: 5px;
+  display: flex;
+  background: #F3F3FA;
+  border-radius: 10px;
+  .switch-by {
+    width: 120px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &.active {
+      color: $secondary-btn ;
+      background: $white-skin-color;
+      font-weight: 600;
+    }
+    .switcher-badge {
+      padding: 3px 8px;
+      position: absolute;
+      top: -40%;
+      background: #0DC3A7;
+      font-size: 10px;
+      color: $white-skin-color;
+    }
+  }
+}
+.premium-card {
+  min-width: 400px;
+  padding: 24px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 15px 50px rgba(136, 166, 211, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and (max-width: 1024px){
+    padding: 24px;
+  }
+  @media screen and (max-width: 992px){
+    width: 100%;
+  }
+  @media screen and (max-width: 568px){
+    min-width: auto;
+  }
+  .special-offers-title {
+    color: $header-background;
+    margin-bottom: 8px;
+  }
+  .premium-card-description {
+    font-family: $font-family-ROBOTO;
+    font-weight: 400;
+    color: #8994A3;
+    &:not(.small) {
+      font-size: 16px;
+    }
+    &.small {
+      font-size: 12px;
+    }
+  }
+  .premium-cost {
+    font-family: $font-family-ROBOTO;
+    font-size: 32px;
+    font-weight: 700;
+    color: $header-background;
+    margin: 8px 0;
+  }
+  .upgrade-btn {
+    width: 100%;
+    background: $secondary-btn;
+    font-size: 16px;
+  }
+}
+.premium-list {
+  margin: 30px 0;
+  .premium-list-item {
+    display: flex;
+    align-items: center;
+    & + .premium-list-item {
+      margin-top: 7px;
+    }
+  }
+  .premium-list-title {
+    font-family: $font-family-ROBOTO;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-inline-start: 15px;
+    color: $menu-item-text-color;
+  }
+  .icon-checkbox {
+    font-size: 10px;
+    color: $secondary-btn;
+  }
+}

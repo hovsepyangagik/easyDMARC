@@ -1,0 +1,101 @@
+@import "./src/sass/settings";
+
+.header {
+  width: 100%;
+  height: 48px;
+  padding: 0 30px 0 15px;
+  display: flex;
+  align-items: center;
+  background: $header-background;
+  .header-logo {
+    width: 225px;
+    display: flex;
+    align-items: center;
+    .icon-logomark {
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+  }
+  .logo-title {
+    margin-inline-start: 12px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    span {
+      font-weight: 700;
+    }
+    @media screen and (max-width: 568px){
+      & {
+        display: none;
+      }
+    }
+  }
+  .header-right-part {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: auto;
+  }
+  .bell-notification-container {
+    display: flex;
+    position: relative;
+  }
+  .notification-count {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30%;
+    right: -40%;
+    font-size: 12px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: #E63200;
+  }
+  .header-menu-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-inline-start: 15px;
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        width: 1px;
+        height: 16px;
+        background: #647385;
+        margin-inline-start: 15px;
+      }
+    }
+    &.compliance {
+      @media screen and (max-width: 568px){
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  .header-menu-item-title {
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    & + .btn {
+      margin-inline-start: 8px;
+    }
+  }
+  .icon-bell-notification,
+  .icon-help {
+    font-size: 17px;
+    color: #FFFFFF;
+  }
+  .icon-help {
+    margin-inline-end: 8px;
+  }
+  .profile-picture {
+    width: 32px;
+    height: 32px;
+  }
+}

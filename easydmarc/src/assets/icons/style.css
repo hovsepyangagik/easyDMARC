@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?u4s0zp');
+    src:  url('fonts/icomoon.eot?u4s0zp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u4s0zp') format('truetype'),
+    url('fonts/icomoon.woff?u4s0zp') format('woff'),
+    url('fonts/icomoon.svg?u4s0zp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logomark:before {
+    content: "\e902";
+}
+.icon-help:before {
+    content: "\e901";
+}
+.icon-bell-notification:before {
+    content: "\e900";
+}
+.icon-platform:before {
+    content: "\e904";
+}
+.icon-right-arrow:before {
+    content: "\e903";
+}
+.icon-down-arrow:before {
+    content: "\e905";
+}
+.icon-burger-menu:before {
+    content: "\e906";
+}
+.icon-dashboard:before {
+    content: "\e907";
+}
+.icon-domains:before {
+    content: "\e908";
+}
+.icon-aggregate-reports:before {
+    content: "\e909";
+}
+.icon-failure-reports:before {
+    content: "\e90a";
+}
+.icon-reporting:before {
+    content: "\e90a";
+}
+.icon-email-senders:before {
+    content: "\e90b";
+}
+.icon-easySPF:before {
+    content: "\e90c";
+}
+.icon-managedDMARC:before {
+    content: "\e90d";
+}
+.icon-managedBIMI:before {
+    content: "\e90d";
+}
+.icon-reputation-monitoring:before {
+    content: "\e90e";
+}
+.icon-email-investigation:before {
+    content: "\e90f";
+}
+.icon-alerts:before {
+    content: "\e910";
+}
+.icon-alert-management:before {
+    content: "\e910";
+}
+.icon-tools:before {
+    content: "\e911";
+}
+.icon-DNS-timeline:before {
+    content: "\e912";
+}
+.icon-domain-management:before {
+    content: "\e913";
+}
+.icon-domain-groups:before {
+    content: "\e914";
+}
+.icon-premium:before {
+    content: "\e915";
+}
+.icon-checkbox-circle:before {
+    content: "\e916";
+}
+.icon-checkbox:before {
+    content: "\e917";
+}
+
